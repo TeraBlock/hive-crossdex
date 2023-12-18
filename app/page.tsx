@@ -447,7 +447,7 @@ const Hive = () => {
       </div>
       </div>}
 
-      <main className="w-[100%] h-[fit-content] flex justify-center py-[2rem] text-[black]">
+      <main className="w-[100%] h-[fit-content] flex justify-center py-[2rem] text-[black] my-[2.5rem]">
         <div className={`w-[clamp(350px,80%,400px)] rounded-sm shadow-lg bg-white h-[fit-content] ${width > 300 ? "p-[2.5rem]" : "p-[1.8rem]"} flex flex-col justify-between items-center gap-[1.5rem]`}>
           <div className="flex flex-col text-center w-[100%] gap-[0.5rem]">
             <p className="text-black font-semibold text-[1.5rem] leading-none">Swidge</p>
@@ -843,7 +843,6 @@ const Hive = () => {
             </div>}
         </div>
       </footer>
-      <ToastContainer position="top-right"/>
     </div>
   );
 };
