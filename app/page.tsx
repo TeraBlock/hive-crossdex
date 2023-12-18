@@ -6,36 +6,6 @@ import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 
 const Hive = () => {
-  const networks = [
-    {
-      id: 1,
-      name: "Ethereum",
-      logo: "./ETH.png",
-      symbol: "eth",
-      displaySymbol: "ETH",
-      currency: "ETH",
-      rpc_url: `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_API}`,
-      explorer: "https://etherscan.io/",
-      allowed: true,
-    },
-    {
-      id: 56,
-      name: "Binance Smart Chain",
-      logo: "./BNB2.png",
-      symbol: "bsc",
-      displaySymbol: "BSC",
-      currency: "BNB",
-      rpc_url: "https://bsc-dataseed.binance.org/",
-      explorer: "https://bscscan.com/",
-      allowed: true,
-    },
-  ];
-  const [selectedToNetwork, setSelectedToNetwork] = useState({
-    symbol: "HIVE",
-    logo: "/svgFiles/hive.png",
-    name: "HIVE",
-  });
-
   const [isConnected, setIsConnected] = useState<boolean>(false);
 
   const [width , setWidth] = useState(0)
@@ -66,6 +36,35 @@ const Hive = () => {
     }, [ref]);
   }
 
+  const networks = [
+    {
+      id: 1,
+      name: "Ethereum",
+      logo: "./ETH.png",
+      symbol: "eth",
+      displaySymbol: "ETH",
+      currency: "ETH",
+      rpc_url: `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_API}`,
+      explorer: "https://etherscan.io/",
+      allowed: true,
+    },
+    {
+      id: 56,
+      name: "Binance Smart Chain",
+      logo: "./BNB2.png",
+      symbol: "bsc",
+      displaySymbol: "BSC",
+      currency: "BNB",
+      rpc_url: "https://bsc-dataseed.binance.org/",
+      explorer: "https://bscscan.com/",
+      allowed: true,
+    },
+  ];
+  const [selectedToNetwork, setSelectedToNetwork] = useState({
+    symbol: "HIVE",
+    logo: "/svgFiles/hive.png",
+    name: "HIVE",
+  });
   const [isFromNetworkOpen, setIsFromNetworkOpen] = useState(false);
   const [isFromCoinOpen, setIsFromCoinOpen] = useState(false);
   const [isToCoinOpen, setIsToCoinOpen] = useState(false);
@@ -80,8 +79,16 @@ const Hive = () => {
   const [getRecieve, setGetRecieve] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
 
-  //for hover
   const [isShown, setIsShown] = useState(false);
+  const [selectedNetwork, setSelectedNetwork] = useState(networks[1]);
+  const [selectedCoin, setSelectedCoin]: any = useState();
+  const [selectedToCoin, setSelectedToCoin]: any = useState(toCoins);
+
+  const [onMobile, setOnMobile] = useState<any>(width > 700 ? false : true);
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+  const [seconds, setSeconds] = useState(0);
+  const [isActive, setIsActive] = useState(false);
+  const [convertToken, setConvertToken] = useState(false);
 
   //details
   const [username, setUsername] = useState<string>("");
@@ -108,16 +115,6 @@ const Hive = () => {
       setHiveEx(prevHiveEx.current);
     }
   }
-
-  const [selectedNetwork, setSelectedNetwork] = useState(networks[1]);
-  const [selectedCoin, setSelectedCoin]: any = useState();
-  const [selectedToCoin, setSelectedToCoin]: any = useState(toCoins);
-
-  const [onMobile, setOnMobile] = useState<any>(width > 700 ? false : true);
-  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
-  const [seconds, setSeconds] = useState(0);
-  const [isActive, setIsActive] = useState(false);
-  const [convertToken, setConvertToken] = useState(false);
 
   useEffect(() => {
     let interval: any = null;
