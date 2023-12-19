@@ -24,7 +24,7 @@ Welcome to the TeraBlock Cross-Chain Swap project for the Hive Blockchain. This 
 
 1. **Clone the Repository**: 
    ```bash
-   git clone [https://github.com/terablock/hive-crossdex.git]
+   git clone (https://github.com/terablock/hive-crossdex.git)
    ```
 2. **Navigate to the Project Directory**: 
    ```bash
