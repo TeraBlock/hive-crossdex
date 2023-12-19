@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# README for TeraBlock Cross-Chain Swap (React Project) on Hive Blockchain
+
+## Introduction
+
+Welcome to the TeraBlock Cross-Chain Swap project for the Hive Blockchain. This is an open-source React application designed to facilitate seamless and efficient cross-chain transactions between the Hive blockchain and other supported blockchains. Our goal is to provide a decentralized, secure, and user-friendly swapping experience.
+
+## Features
+
+- **Cross-Chain Swapping**: Facilitates asset swaps between Hive and other supported blockchains.
+- **Decentralized Application**: Run the application independently at your end.
+- **React-Based UI**: A modern, responsive user interface built with React.
+- **Secure and Private**: Enhanced security features with a focus on user privacy.
+- **Open Source**: Modify and adapt the code to suit your needs.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js and npm installed on your machine.
+- Basic knowledge of React and JavaScript.
+- A Hive blockchain account and compatible wallets for other supported blockchains.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation and Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository**: 
+   ```bash
+   git clone [https://github.com/terablock/hive-crossdex.git]
+   ```
+2. **Navigate to the Project Directory**: 
+   ```bash
+   cd cross-chain-swap
+   ```
+3. **Install Dependencies**: 
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Running the Application
 
-## Learn More
+1. **Start the React App**: 
+   ```bash
+   npm start
+   ```
+   This command runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Build for Production**: 
+   ```bash
+   npm run build
+   ```
+   Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Connect Your Wallets**: Use the interface to connect your Hive wallet and other blockchain wallets.
+- **Perform Swaps**: Select the source and destination chains, enter the amount, and initiate the swap.
+- **Monitor Transactions**: Keep track of your transactions directly through the application.
