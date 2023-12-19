@@ -1,8 +1,6 @@
-# README for TeraBlock Cross-Chain Swap (React Project) on Hive Blockchain
-
 ## Introduction
 
-Welcome to the TeraBlock Cross-Chain Swap project for the Hive Blockchain. This is an open-source React application designed to facilitate seamless and efficient cross-chain transactions between the Hive blockchain and other supported blockchains. Our goal is to provide a decentralized, secure, and user-friendly swapping experience.
+This is an open-source React application designed to facilitate seamless and efficient cross-chain transactions between the Hive blockchain and other supported blockchains. Our goal is to provide a decentralized, secure, and user-friendly exchange experience.
 
 ## Features
 
